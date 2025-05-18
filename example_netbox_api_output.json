@@ -1,0 +1,248 @@
+
+NetBox
+
+    sam
+
+    API Root IPAM IP Address List 
+
+IP Address List
+
+GET /api/ipam/ip-addresses/
+
+HTTP 200 OK
+Allow: GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 1,
+            "url": "http://10.20.20.207:8000/api/ipam/ip-addresses/1/",
+            "display_url": "http://10.20.20.207:8000/ipam/ip-addresses/1/",
+            "display": "192.168.101.1/24",
+            "family": {
+                "value": 4,
+                "label": "IPv4"
+            },
+            "address": "192.168.101.1/24",
+            "vrf": {
+                "id": 2,
+                "url": "http://10.20.20.207:8000/api/ipam/vrfs/2/",
+                "display": "test",
+                "name": "test",
+                "rd": null,
+                "description": ""
+            },
+            "tenant": null,
+            "status": {
+                "value": "active",
+                "label": "Active"
+            },
+            "role": null,
+            "assigned_object_type": "dcim.interface",
+            "assigned_object_id": 1,
+            "assigned_object": {
+                "id": 1,
+                "url": "http://10.20.20.207:8000/api/dcim/interfaces/1/",
+                "display": "a",
+                "device": {
+                    "id": 2,
+                    "url": "http://10.20.20.207:8000/api/dcim/devices/2/",
+                    "display": "test-fw",
+                    "name": "test-fw",
+                    "description": "test-firewall"
+                },
+                "name": "a",
+                "description": "",
+                "cable": null,
+                "_occupied": false
+            },
+            "nat_inside": null,
+            "nat_outside": [],
+            "dns_name": "",
+            "description": "v101-black-gw",
+            "comments": "",
+            "tags": [],
+            "custom_fields": {
+                "ip_type": "gateway",
+                "ip_vlanid": "101",
+                "security_zone": "black"
+            },
+            "created": "2025-05-18T06:09:24.749916Z",
+            "last_updated": "2025-05-18T21:43:36.780735Z"
+        },
+        {
+            "id": 2,
+            "url": "http://10.20.20.207:8000/api/ipam/ip-addresses/2/",
+            "display_url": "http://10.20.20.207:8000/ipam/ip-addresses/2/",
+            "display": "192.168.102.1/24",
+            "family": {
+                "value": 4,
+                "label": "IPv4"
+            },
+            "address": "192.168.102.1/24",
+            "vrf": {
+                "id": 2,
+                "url": "http://10.20.20.207:8000/api/ipam/vrfs/2/",
+                "display": "test",
+                "name": "test",
+                "rd": null,
+                "description": ""
+            },
+            "tenant": null,
+            "status": {
+                "value": "active",
+                "label": "Active"
+            },
+            "role": null,
+            "assigned_object_type": "dcim.interface",
+            "assigned_object_id": 1,
+            "assigned_object": {
+                "id": 1,
+                "url": "http://10.20.20.207:8000/api/dcim/interfaces/1/",
+                "display": "a",
+                "device": {
+                    "id": 2,
+                    "url": "http://10.20.20.207:8000/api/dcim/devices/2/",
+                    "display": "test-fw",
+                    "name": "test-fw",
+                    "description": "test-firewall"
+                },
+                "name": "a",
+                "description": "",
+                "cable": null,
+                "_occupied": false
+            },
+            "nat_inside": null,
+            "nat_outside": [],
+            "dns_name": "",
+            "description": "v102-blue-gw",
+            "comments": "",
+            "tags": [],
+            "custom_fields": {
+                "ip_type": "gateway",
+                "ip_vlanid": "102",
+                "security_zone": "blue"
+            },
+            "created": "2025-05-18T06:09:49.326078Z",
+            "last_updated": "2025-05-18T21:43:48.562580Z"
+        },
+        {
+            "id": 3,
+            "url": "http://10.20.20.207:8000/api/ipam/ip-addresses/3/",
+            "display_url": "http://10.20.20.207:8000/ipam/ip-addresses/3/",
+            "display": "192.168.103.1/24",
+            "family": {
+                "value": 4,
+                "label": "IPv4"
+            },
+            "address": "192.168.103.1/24",
+            "vrf": {
+                "id": 2,
+                "url": "http://10.20.20.207:8000/api/ipam/vrfs/2/",
+                "display": "test",
+                "name": "test",
+                "rd": null,
+                "description": ""
+            },
+            "tenant": null,
+            "status": {
+                "value": "active",
+                "label": "Active"
+            },
+            "role": null,
+            "assigned_object_type": "dcim.interface",
+            "assigned_object_id": 1,
+            "assigned_object": {
+                "id": 1,
+                "url": "http://10.20.20.207:8000/api/dcim/interfaces/1/",
+                "display": "a",
+                "device": {
+                    "id": 2,
+                    "url": "http://10.20.20.207:8000/api/dcim/devices/2/",
+                    "display": "test-fw",
+                    "name": "test-fw",
+                    "description": "test-firewall"
+                },
+                "name": "a",
+                "description": "",
+                "cable": null,
+                "_occupied": false
+            },
+            "nat_inside": null,
+            "nat_outside": [],
+            "dns_name": "",
+            "description": "v103-green-gw",
+            "comments": "",
+            "tags": [],
+            "custom_fields": {
+                "ip_type": "gateway",
+                "ip_vlanid": "103",
+                "security_zone": "green"
+            },
+            "created": "2025-05-18T06:10:05.847853Z",
+            "last_updated": "2025-05-18T21:43:53.659801Z"
+        },
+        {
+            "id": 4,
+            "url": "http://10.20.20.207:8000/api/ipam/ip-addresses/4/",
+            "display_url": "http://10.20.20.207:8000/ipam/ip-addresses/4/",
+            "display": "192.168.125.1/24",
+            "family": {
+                "value": 4,
+                "label": "IPv4"
+            },
+            "address": "192.168.125.1/24",
+            "vrf": {
+                "id": 2,
+                "url": "http://10.20.20.207:8000/api/ipam/vrfs/2/",
+                "display": "test",
+                "name": "test",
+                "rd": null,
+                "description": ""
+            },
+            "tenant": null,
+            "status": {
+                "value": "active",
+                "label": "Active"
+            },
+            "role": null,
+            "assigned_object_type": "dcim.interface",
+            "assigned_object_id": 1,
+            "assigned_object": {
+                "id": 1,
+                "url": "http://10.20.20.207:8000/api/dcim/interfaces/1/",
+                "display": "a",
+                "device": {
+                    "id": 2,
+                    "url": "http://10.20.20.207:8000/api/dcim/devices/2/",
+                    "display": "test-fw",
+                    "name": "test-fw",
+                    "description": "test-firewall"
+                },
+                "name": "a",
+                "description": "",
+                "cable": null,
+                "_occupied": false
+            },
+            "nat_inside": null,
+            "nat_outside": [],
+            "dns_name": "",
+            "description": "v125-red-gw",
+            "comments": "",
+            "tags": [],
+            "custom_fields": {
+                "ip_type": "gateway",
+                "ip_vlanid": "125",
+                "security_zone": "red"
+            },
+            "created": "2025-05-18T06:10:15.995924Z",
+            "last_updated": "2025-05-18T21:43:59.968805Z"
+        }
+    ]
+}
+
