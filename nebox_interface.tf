@@ -1,7 +1,7 @@
 data "http" "netbox_interfaces" {
-  url = "http://10.20.20.207:8000/api/ipam/ip-addresses/"
+  url = "http://###YOUT-NETBOX-IP_HOSTNAME-HERE:8000/api/ipam/ip-addresses/"
   request_headers = {
-    Authorization = "Token 83947700300503988007603229d9ca12935d0e02"
+    Authorization = "Token ###YOUR-TOKEN-HERE"
     Accept        = "application/json"
   }
 }
