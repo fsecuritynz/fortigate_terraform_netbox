@@ -65,4 +65,9 @@ resource "fortios_system_zone" "zones" {
       interface_name = interface.value
     }
   }
+
+  depends_on = [
+    # Ensure all interfaces are created before zones
+    fortios_system_interface.netbox_interfaces
+  ]
 }
